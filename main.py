@@ -189,7 +189,7 @@ def main():
                         4)))
                 fprint()
                 # load the best model
-                classifier.model = torch.load("content/" + str(col) + "bert_best.pt")
+                classifier.model = torch.load("content/" + str(col) + "bert_best.pt", weights_only=False)
 
         for p1 in predictors.keys():
 
@@ -295,7 +295,7 @@ def main():
                     4)))
             fprint()
             # load the best model
-            classifier.model = torch.load("content/" + str(col) + "bert_best.pt")
+            classifier.model = torch.load("content/" + str(col) + "bert_best.pt", weights_only=False)
 
     #######################################################################################################  uncomment
     # n = int(0.8 * len(train_data))

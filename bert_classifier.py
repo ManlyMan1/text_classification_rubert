@@ -121,10 +121,10 @@ class BertClassifier:
                 torch.save(self.model, self.model_save_path)
                 best_accuracy = val_acc
 
-        self.model = torch.load(self.model_save_path)
+        self.model = torch.load(self.model_save_path, weights_only=False)
 
     def load(self):
-        self.model = torch.load(self.model_save_path)
+        self.model = torch.load(self.model_save_path, weights_only=False)
 
     def predict(self, text):
         with torch.no_grad():
