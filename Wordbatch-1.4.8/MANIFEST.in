@@ -1,0 +1,26 @@
+include LICENSE.txt
+
+include wordbatch/__init__.py
+include wordbatch/wordbatch.py
+
+include wordbatch/extractors/__init__.py
+include wordbatch/extractors/extractors.pyx
+include wordbatch/extractors/MurmurHash3.cpp
+include wordbatch/extractors/MurmurHash3.h
+
+include wordbatch/models/__init__.py
+include wordbatch/models/ftrl.pyx
+include wordbatch/models/fm_ftrl.pyx
+include wordbatch/models/nn_relu_h1.pyx
+include wordbatch/models/nn_relu_h2.pyx
+include wordbatch/models/avx_ext.c
+include wordbatch/models/avx_ext.h
+
+include scripts/wordbag_regressor.py
+include scripts/wordhash_regressor.py
+include scripts/wordseq_regressor.py
+include scripts/wordvec_regressor.py
+include scripts/classify_airline_sentiment.py
+include scripts/backends_benchmark.py
+
+include data/Tweets.csv
